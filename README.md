@@ -3,15 +3,21 @@
 [Ссылка на код](https://github.com/npetyaeva/javaLesson_2_2/blob/master/src/Main.java)
 
 ```java
+
 public class Main {
     public static void main(String[] args) {
 
-        int priceTicket = 9999;
-        int rublesPerMile = 20;
+        int currentAccount = 100;
+        int bonusAmount = 100;
+        int depositAmount = 1100;
 
-        int countMiles = priceTicket / rublesPerMile;
-
-        System.out.println(countMiles + " miles");
+        if (depositAmount == 100) {
+            currentAccount = currentAccount + depositAmount;
+            System.out.println(currentAccount + " rub");
+        } else {
+            currentAccount = currentAccount + depositAmount + depositAmount / bonusAmount;
+            System.out.println(currentAccount + " rub");
+        }
     }
 }
 ```
