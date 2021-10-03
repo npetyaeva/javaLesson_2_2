@@ -6,12 +6,17 @@
 public class Main {
     public static void main(String[] args) {
 
-        int priceTicket = 9999;
-        int rublesPerMile = 20;
+        int currentAccount = 300;
+        int bonusAmount = 300;
+        int depositAmount = 301;
 
-        int countMiles = priceTicket / rublesPerMile;
-
-        System.out.println(countMiles + " miles");
+        if (depositAmount <= bonusAmount) {
+            currentAccount = currentAccount + depositAmount;
+            System.out.println(currentAccount + " rub");
+        } else {
+            currentAccount = currentAccount + depositAmount + depositAmount / bonusAmount;
+            System.out.println(currentAccount + " rub");
+        }
     }
 }
 ```
