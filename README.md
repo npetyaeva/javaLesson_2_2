@@ -7,11 +7,11 @@
 public class Main {
     public static void main(String[] args) {
 
-        int currentAccount = 100;
-        int bonusAmount = 100;
-        int depositAmount = 1100;
+        int currentAccount = 300;
+        int bonusAmount = 300;
+        int depositAmount = 301;
 
-        if (depositAmount == 100) {
+        if (depositAmount <= bonusAmount) {
             currentAccount = currentAccount + depositAmount;
             System.out.println(currentAccount + " rub");
         } else {
