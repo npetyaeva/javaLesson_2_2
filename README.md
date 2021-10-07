@@ -1,8 +1,9 @@
 ## Задача №2
 
-[Ссылка на код](https://github.com/npetyaeva/-javaLesson_2_2/blob/master/src/Main.java)
+[Ссылка на код](https://github.com/npetyaeva/javaLesson_2_2/blob/master/src/Main.java)
 
 ```java
+
 public class Main {
     public static void main(String[] args) {
 
