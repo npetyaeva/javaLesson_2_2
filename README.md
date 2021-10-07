@@ -3,20 +3,21 @@
 [Ссылка на код](https://github.com/npetyaeva/javaLesson_2_2/blob/master/src/Main.java)
 
 ```java
-
 public class Main {
     public static void main(String[] args) {
 
-        int currentAccount = 300;
-        int bonusAmount = 300;
-        int depositAmount = 301;
+        int currentAccount = 100;
+        int bonusAmount = 100;
+        int depositAmount = 500;
 
-        if (depositAmount <= bonusAmount) {
+        if (depositAmount <= 1000) {
             currentAccount = currentAccount + depositAmount;
-            System.out.println(currentAccount + " rub");
+            System.out.println("Bonus: 0 rub");
+            System.out.println("Amount on account: " + currentAccount + " rub");
         } else {
             currentAccount = currentAccount + depositAmount + depositAmount / bonusAmount;
-            System.out.println(currentAccount + " rub");
+            System.out.println("Bonus: " + depositAmount / bonusAmount + " rub");
+            System.out.println("Amount on account: " + currentAccount + " rub");
         }
     }
 }
